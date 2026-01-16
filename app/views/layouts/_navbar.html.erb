@@ -1,4 +1,4 @@
-<%= form_with url: posts_path, method: :get, local: true, data: { searchDelayValue: 300, controller: "search", turbo_frame: "posts" }, class: "w-full" do |f| %>
+<%= form_with url: posts_path(format: :turbo_stream), method: :get, local: true, data: { searchDelayValue: 300, controller: "search", turbo_frame: "posts" }, class: "w-full" do |f| %>
   <%= f.text_field :query,
     value: params[:query],
     placeholder: "Quick Search...",

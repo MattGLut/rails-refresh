@@ -42,6 +42,7 @@ gem "image_processing", "~> 1.2"
 
 # Custom Gems
 gem "friendly_id"
+gem "pry"
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
