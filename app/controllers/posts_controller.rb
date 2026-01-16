@@ -12,7 +12,7 @@ class PostsController < ApplicationController
 
     respond_to do |format|
       format.html
-      format.turbo_stream { render partial: "posts/post_list", formats: [:html], locals: { posts: @posts } }
+      format.turbo_stream
     end
   end
 
